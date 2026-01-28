@@ -17,7 +17,7 @@ def test_home_json(client):
     # 2. Check that content-type header is 'application/json'
     assert response.is_json
     
-    # 3. Validate the content of the JSON response
+    # 3. Validate the content 
     data = response.get_json()
     assert data["service"] == "homework-api"
     assert data["status"] == "healthy"
